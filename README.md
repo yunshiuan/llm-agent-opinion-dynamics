@@ -13,7 +13,7 @@
 <em></em>
 
 <p align="center">
-  <img src ="ss.png"  width="1000"/>
+  <img src ="cover_image.png"  width="600"/>
 </p>
 
 Accurately simulating human opinion dynamics is crucial for understanding a variety of societal phenomena, including polarization and the spread of misinformation. However, the agent based models (ABMs) commonly used for such simulations often over-simplify human behavior. We propose a new approach to simulating opinion dynamics based on populations of Large Language Models (LLMs). Our findings reveal a strong inherent bias in LLM agents towards producing accurate information, leading simulated agents to consensus in line with scientific reality. This bias limits their utility for understanding resistance to consensus views on issues like climate change. After inducing confirmation bias through prompt engineering, however, we observed opinion fragmentation in line with existing agent-based modeling and opinion dynamics research. These insights highlight the promise and limitations of LLM agents in this domain and suggest a path forward: refining LLMs with real-world discourse to better simulate the evolution of human beliefs.
@@ -77,11 +77,10 @@ python scripts/opinion_dynamics_oss_control_v4_reflection.py \
 If you find our work and codebase useful for your work, please cite our work using the following BibTex citation:
 
 ```
-@InProceedings{chuang2023simulating,
-    author    = {Chuang, Yun-Shiuan and Goyal, Agam and Harlalka, Nikunj and Suresh, Siddharth and Hawkins, Robert and Yang, Sijia and Shah, Dhavan and Hu, Junjie and Rogers, Timothy T},
-    title     = {Simulating Opinion Dynamics with Networks of LLM-based Agents},
-    booktitle = {Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
-    month     = {June},
-    year      = {2024},
+@article{chuang2023simulating,
+  title={Simulating Opinion Dynamics with Networks of LLM-based Agents},
+  author={Chuang, Yun-Shiuan and Goyal, Agam and Harlalka, Nikunj and Suresh, Siddharth and Hawkins, Robert and Yang, Sijia and Shah, Dhavan and Hu, Junjie and Rogers, Timothy T},
+  journal={arXiv preprint arXiv:2311.09618},
+  year={2023}
 }
 ```
