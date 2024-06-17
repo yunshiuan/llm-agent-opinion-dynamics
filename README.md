@@ -43,7 +43,21 @@ pip install sentencepiece
 
 ## Prompt Versions
 
-To be added
+Template prompt versions for control and interaction conditions for all levels of confirmation bias (none, weak, strong) and both framings (default, reverse) can be found in the `prompts/opinion_dynamics/Flache_2017` directory. In order to run the simulation for another topic, please modify the prompts accordingly, keeping the same template.
+
+For example, replace the placeholder text `REPLACE_THIS` with the appropritate theory being used for the LLM agent simulation.
+
+```
+Now, {AGENT_NAME}, after you wrote your {TWEET_WRITTEN_COUNT}{SUPERSCRIPT} tweet, please write another tweet about the Theory XYZ that claims that {REPLACE_THIS}. The tweet should also reflect your honest belief.
+
+Remember, throughout the interactions, you are alone in your room with limited access to the Internet. You can not search for information about XYZ on the Internet. You can not go out to ask other people about XYZ. Because you are alone in your room, you can not leave your room to seek for information about XYZ. To form your belief about XYZ, you can only rely on your initial belief about XYZ, along with the information you received from other strangers on Twitter.
+
+Write the tweet now.
+
+Your Tweet:
+
+---------------------------
+```
 
 ## Running a Simulation:
 
